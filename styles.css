@@ -1,0 +1,170 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6fb;
+  color: #1f2a37;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1000px, 92%);
+  margin: 24px auto;
+}
+
+/* Colores personalizados + estilos de encabezados/párrafos */
+.site-header {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 24px;
+}
+
+.site-header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.site-header p {
+  opacity: 0.9;
+  margin-bottom: 14px;
+}
+
+.site-nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.site-nav a:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dbe2f1;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 12px 0 8px;
+  color: #1d4ed8;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Multimedia */
+.media {
+  width: 100%;
+  max-width: 720px;
+  display: block;
+  margin: 10px 0 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Listas */
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+ol, ul {
+  padding-left: 18px;
+}
+
+/* Tabla (bordes/estilos obligatorios) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+thead th {
+  background: #e0e7ff;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #c7d2fe;
+  padding: 10px;
+}
+
+/* Formulario (bordes/estilos obligatorios) */
+form {
+  margin-top: 10px;
+  padding: 14px;
+  border: 1px solid #dbe2f1;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+}
+
+button {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #1d4ed8;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.95);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 18px;
+  color: #334155;
+}
+
+/* Responsive simple */
+@media (max-width: 700px) {
+  .two-columns {
+    grid-template-columns: 1fr;
+  }
+}

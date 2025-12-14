@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semana 3 - Mi Página Web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Semana 3: Página Web con HTML + CSS</h1>
+    <p>
+      Esta página incluye estructura semántica, multimedia, listas, enlaces, tabla y formulario.
+      <strong>Todo</strong> con un toque de <em>estilo</em>.
+    </p>
+
+    <nav class="site-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#multimedia">Multimedia</a>
+      <a href="#tabla">Tabla</a>
+      <a href="#formulario">Formulario</a>
+    </nav>
+  </header>
+
+  <main id="inicio" class="container">
+    <section class="card">
+      <h2>Sección 1: Encabezados, párrafos y listas</h2>
+
+      <article>
+        <h3>Artículo: ¿Qué estoy practicando?</h3>
+        <p>
+          Estoy practicando el uso de <strong>etiquetas semánticas</strong> y contenido estructurado.
+          Además, uso <em>formatos de texto</em> con etiquetas básicas.
+        </p>
+
+        <div class="two-columns">
+          <div>
+            <h3>Lista ordenada (ol)</h3>
+            <ol>
+              <li>Crear carpeta del proyecto</li>
+              <li>Escribir el HTML</li>
+              <li>Aplicar estilos CSS</li>
+            </ol>
+          </div>
+
+          <div>
+            <h3>Lista desordenada (ul)</h3>
+            <ul>
+              <li>Encabezados h1, h2, h3</li>
+              <li>Imagen y video</li>
+              <li>Tabla y formulario</li>
+            </ul>
+          </div>
+        </div>
+
+        <p>
+          Enlace externo:
+          <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">
+            Visitar MDN Web Docs
+          </a>
+        </p>
+      </article>
+    </section>
+
+    <section id="multimedia" class="card">
+      <h2>Sección 2: Multimedia</h2>
+
+      <article>
+        <h3>Imagen desde el repositorio</h3>
+        <img
+          src="assets/img/imagen1.jpg"
+          alt="Imagen de ejemplo almacenada en la carpeta assets/img"
+          class="media"
+        />
+
+        <h3>Video desde el repositorio</h3>
+        <video class="media" controls>
+          <source src="assets/video/video1.mp4" type="video/mp4" />
+          Tu navegador no soporta la etiqueta video.
+        </video>
+      </article>
+    </section>
+
+    <section id="tabla" class="card">
+      <h2>Sección 3: Tabla</h2>
+
+      <article>
+        <h3>Tabla de ejemplo (3 filas, 2 columnas)</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Elemento</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>HTML</th>
+              <td>Estructura el contenido de la página.</td>
+            </tr>
+            <tr>
+              <th>CSS</th>
+              <td>Da estilo: colores, márgenes, bordes, etc.</td>
+            </tr>
+            <tr>
+              <th>Live Server</th>
+              <td>Actualiza el navegador automáticamente al guardar.</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <section id="formulario" class="card">
+      <h2>Sección 4: Formulario</h2>
+
+      <article>
+        <h3>Contáctame</h3>
+
+        <form>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Daniel" required />
+
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" placeholder="Ej: correo@ejemplo.com" required />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      © 2025 - Proyecto Semana 3. Hecho con <strong>HTML</strong> y <em>CSS</em>.
+    </p>
+  </footer>
+</body>
+</html>
